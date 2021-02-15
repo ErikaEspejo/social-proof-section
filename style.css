@@ -86,6 +86,8 @@ body {
 .comments {
   margin-block-start: 40px;
   color: var(--light-grayish-magenta);
+  display: flex;
+  flex-direction: column;
 }
 
 .user {
@@ -130,4 +132,88 @@ span {
   text-decoration: none;
   color: var(--dark-magenta);
   font-weight: 700;
+}
+
+@media (min-width:1100px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
+  }
+
+  .main {
+    margin-block-start: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline: 160px;
+    padding-block-start: 60px;
+  }
+
+  .description {
+    margin-block-start: 0;
+    width: 40%;
+    text-align: left;
+  }
+
+  .description h1 {
+    width: 400px;
+    font-size: 4rem;
+    padding-inline-start: 0;
+  }
+
+  .rate {
+    margin-block-start: 40px;
+    width: 50%;
+    margin-inline-start: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rate-box {
+    display: inline-flex;
+    width: 350px;
+    flex-direction: row;
+    justify-content: left;
+    margin-block-start:10px;
+    height: 60px;
+  }
+
+  .stars {
+    margin-block-start: 0;
+    margin-inline: 10px;
+    width: 100px;
+    background-repeat: space;
+  }
+
+  .report {
+    align-self: center;
+  }
+
+  .bestTech {
+    align-self: flex-end;
+  }
+
+  .comments {
+    flex-direction: row;
+    height: 300px;
+    margin-block-end: 20px;
+    align-items: flex-end;
+  }
+
+  .user {
+    height: auto;
+    margin-inline-end: 20px;
+  }
+
+  .user-1 {
+    align-self: flex-start;
+  }
+
+
+  .user-2 {
+    align-self: center;
+  }
+
+  .user-3 {
+    align-self: flex-end;
+  }
 }
