@@ -141,7 +141,7 @@ span {
   }
 
   .main {
-    margin-block-start: 40px;
+    margin-block-start: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -200,7 +200,7 @@ span {
   .comments {
     flex-direction: row;
     height: 360px;
-    margin-block-end: 20px;
+    margin-block-end: 10px;
     align-items: flex-end;
   }
 
@@ -226,5 +226,9 @@ span {
 @media (min-width:1100px){
   .rate-box {
     width: 400px;
+  }
+
+  .comments {
+    height: 280px;
   }
 }
